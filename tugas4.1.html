@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Operasi Array</title>
+</head>
+<body>
+  <h2>Soal 1: Operasi Array</h2>
+  <p>Output setelah elemen pertama array dihapus:</p>
+  <pre id="arrayOutput"></pre>
+
+  <script>
+    let array = [1, 2, 3, "halo", false, true];
+    array.shift(); // Menghapus elemen pertama
+    document.getElementById("arrayOutput").textContent = JSON.stringify(array);
+  </script>
+</body>
+</html>

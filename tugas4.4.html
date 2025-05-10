@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operasi Try - Catch - Finally</title>
+</head>
+<body>
+    <h2>Try Catch Finally Example</h2>
+    <pre id="output"></pre>
+    <script>
+        const number = 100, text = 'a';
+        let hasil = ""; 
+        try {
+            hasil += number / text + "\n";  // NaN
+            hasil += a + "\n";              // ReferenceError karena 'a' tidak didefinisikan
+        } catch (err) {
+            hasil += "An error caught\n";
+            hasil += "Error message: " + err + "\n";
+        } finally {
+            hasil += "Finally will execute every time";
+        }
+        document.getElementById('output').innerText = hasil;
+    </script>
+</body>
+</html>

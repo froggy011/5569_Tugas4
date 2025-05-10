@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Operasi Conditional</title>
+</head>
+<body>
+  <h1>Hasil:</h1>
+  <p id="result"></p>
+
+  <script>
+    let cheese = prompt("Masukkan jenis keju:");
+
+    if (cheese === "cheddar") {
+      document.getElementById("result").textContent = "Yay! Cheese available for making cheese on toast.";
+    } else {
+      document.getElementById("result").textContent = "No cheese on toast for you today.";
+    }
+  </script>
+</body>
+</html>
